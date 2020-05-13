@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+service Greeter {
+  rpc Double (Request) returns (Response);
+}
+
+message Request {
+  string name = 1;
+  int32 number = 2;
+}
+
+message Response {
+  string message = 1;
+}
